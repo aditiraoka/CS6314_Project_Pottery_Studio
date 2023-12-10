@@ -107,3 +107,7 @@ td {
 .contact-us-section svg {
   margin-right: 8px;
 }
+
+.carousel-item img{
+   width: 100%;
+}

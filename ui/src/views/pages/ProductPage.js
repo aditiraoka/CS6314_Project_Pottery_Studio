@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; 
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { imageListClasses } from '@mui/material';
 import '../../css/ProductPage.css';
 import { CartContext } from '../../context/CartContext'; 
 

@@ -115,7 +115,7 @@ function ShopPage() {
                     return (
                         <div key={type} className="category"> 
                             {imagePath && (
-                                <button style={{ border: 'none', background: 'none', padding: 0 }} onClick={() => handleCategoryClick(type)}>
+                                <button className='btn-category' style={{ border: 'none', background: 'none', padding: 0 }} onClick={() => handleCategoryClick(type)}>
                                     <p className='types'>{type}</p>
                                 </button>
                             )}

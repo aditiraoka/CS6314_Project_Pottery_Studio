@@ -53,7 +53,7 @@ function CartPage() {
                                             <p className="cart-item">Quantity: {item.quantity}</p>
                                             {console.log(item.productId)}
                                             <div className='remove-item'>
-                                                <p className="cart-item"><a href='/cart' onClick={() => handleRemoveItem(item.productId)}>Delete Item</a></p>
+                                                <button className="btn btn-primary cart-btn" onClick={() => handleRemoveItem(item.productId)}>Delete Item</button>
                                             </div>
                                         </div>
                                     </div>

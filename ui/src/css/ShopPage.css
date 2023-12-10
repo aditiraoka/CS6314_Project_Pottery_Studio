@@ -33,7 +33,6 @@
 
 .h1title {
     margin: 30px;
-    font-family: 'Cinzel', serif;
     font-weight: bold;
 }
 
@@ -88,10 +87,7 @@ button .types {
     padding: 50px;
     margin: 50px;
     color: #000;
-}
-
-.categories p {
-    text-align: center;
+    font-size: 25pt;
 }
   
 .reset-button {

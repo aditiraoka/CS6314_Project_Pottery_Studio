@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .routes {
+    width: 100%; /* Adjust the percentage as needed */
+    height: 200px; /* Fixed height, adjust as needed */
+  }
+}
+
+/* Your styles for medium screens go here */
+@media only screen and (min-width: 641px) and (max-width: 900px) {
+  .routes {
+    width: 100%; /* Adjust the percentage as needed */
+    height: 200px; /* Fixed height, adjust as needed */
+  }
+}
+
+/* Your styles for larger screens go here */
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+  .routes {
+    width: 100%; /* Adjust the percentage as needed */
+    height: 200px; /* Fixed height, adjust as needed */
+  }
+}
+
+/* Your styles for extra-large screens go here */
+@media only screen and (min-width: 1025px) {
+  .routes {
+    width: 100%; /* Adjust the percentage as needed */
+    height: 200px; /* Fixed height, adjust as needed */
+  }
+}

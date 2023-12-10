@@ -69,6 +69,10 @@
   margin-right: 0; /* Remove margin on the last item */
 }
 
+.carousel-item img{
+   width: 100%;
+  
+}
 
 .shop-button:hover {
   background-color: darkred;

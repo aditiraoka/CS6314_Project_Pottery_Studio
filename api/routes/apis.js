@@ -82,13 +82,13 @@ router.get('/dashboard/:id', function(req, res) {
 router.put('/dashboard/:id', async (req, res) => {
     try {
         // Get the updated fields and the id
-        const { name, description, type, count, imgPath, imgDescription } = req.body;
+        const { name, description, type, count, price, imgPath, imgDescription } = req.body;
 
         console.log(req.params.id + ", " + name + ", update");
   
         // Attempt to update the selected product
         let productUpdate = database.collection("Inventory").updateOne({ "_id" : ObjectId(req.params.id) }, { $set: { 
-            description: description, name: name, type: type, count: count,
+            description: description, name: name, type: type, count: count, price: price,
             image: { path: imgPath, description: imgDescription } } });
         
         // If the attempt is successful, send the update
@@ -105,13 +105,14 @@ router.put('/dashboard/:id', async (req, res) => {
 router.post('/dashboard', async (req, res) => {
     try {
         // Get the new fields and create the new product object
-        const { productId, name, description, type, count, imgPath, imgDescription } = req.body;
+        const { productId, name, description, type, count, price, imgPath, imgDescription } = req.body;
         const newProduct = {
             productId: productId,
             description: description,
             name: name,
             count: count,
             type: type,
+            price: price,
             image:
             {
                 path: imgPath,
